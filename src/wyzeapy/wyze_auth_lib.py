@@ -19,7 +19,7 @@ _LOGGER = logging.getLogger(__name__)
 
 class Token:
     # Token is good for 216,000 seconds (60 hours) but 48 hours seems like a reasonable refresh interval
-    REFRESH_INTERVAL = 172800
+    REFRESH_INTERVAL = 86400
 
     def __init__(self, access_token, refresh_token, refresh_time: float = None):
         self._access_token: str = access_token
